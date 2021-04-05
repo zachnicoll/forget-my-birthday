@@ -1,11 +1,9 @@
 import React from 'react';
-import {ScrollViewProps} from 'react-native';
+import {ViewProps} from 'react-native';
 import * as styles from './styles';
 
-interface PageProps extends ScrollViewProps {}
+interface PageProps extends ViewProps {}
 
-export const Page: React.FC<PageProps> = ({children, ...scrollViewProps}) => {
-  return (
-    <styles.PageContainer {...scrollViewProps}>{children}</styles.PageContainer>
-  );
+export const Page: React.FC<PageProps> = ({children, ...viewProps}) => {
+  return <styles.PageContainer {...viewProps}>{children}</styles.PageContainer>;
 };

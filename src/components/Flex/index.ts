@@ -1,10 +1,6 @@
 import styled from '@emotion/native';
 
-export const Flex = styled.View`
-  flex: 1;
-`;
-
-export const FlexRow = styled(Flex)`
+export const FlexRow = styled.View`
   flex-direction: row;
   align-items: center;
 `;
@@ -13,16 +9,12 @@ export const FlexRowBetween = styled(FlexRow)`
   justify-content: space-between;
 `;
 
-export const FlexColCenter = styled(Flex)`
+export const FlexColCenter = styled.View`
   align-items: center;
   justify-content: center;
 `;
 
-export const TouchableFlex = styled.TouchableOpacity`
-  flex: 1;
-`;
-
-export const TouchableFlexRow = styled(TouchableFlex)`
+export const TouchableFlexRow = styled.TouchableOpacity`
   flex-direction: row;
   align-items: center;
 `;
@@ -31,7 +23,7 @@ export const TouchableFlexRowBetween = styled(TouchableFlexRow)`
   justify-content: space-between;
 `;
 
-export const TouchableFlexColCenter = styled(TouchableFlex)`
+export const TouchableFlexColCenter = styled.TouchableOpacity`
   align-items: center;
   justify-content: center;
 `;

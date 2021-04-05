@@ -5,9 +5,18 @@ import {
 } from '@react-navigation/stack';
 import React from 'react';
 import Home from 'routes/Home';
+import {Person} from 'types';
+import AddPerson from './AddPerson';
+import ViewPeople from './ViewPeople';
+import Settings from './Settings';
 
 export type RootStackParamList = {
   Home: undefined;
+  AddPerson: {
+    person?: Person;
+  };
+  ViewPeople: undefined;
+  Settings: undefined;
 };
 
 interface ScreenProps {
@@ -28,5 +37,22 @@ export const RootStackScreens: StackScreen[] = [
     options: {
       headerShown: false,
     },
+  },
+  {
+    name: 'AddPerson',
+    component: AddPerson,
+    options: {
+      headerTitle: 'Remember a Birthday',
+    },
+  },
+  {
+    name: 'ViewPeople',
+    component: ViewPeople,
+    options: {},
+  },
+  {
+    name: 'Settings',
+    component: Settings,
+    options: {},
   },
 ];
