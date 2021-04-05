@@ -35,7 +35,7 @@ const Home: React.FC<HomeProps> = ({navigation}) => {
           <Hero person={people[0]} />
           <ScrollView>
             {people.map(person => (
-              <PersonRow person={person} />
+              <PersonRow key={person.id} person={person} />
             ))}
           </ScrollView>
 

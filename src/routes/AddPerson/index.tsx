@@ -1,7 +1,7 @@
 import {css} from '@emotion/native';
 import {RouteProp} from '@react-navigation/native';
 import {StackNavigationProp} from '@react-navigation/stack';
-import {Page} from 'components';
+import {Input, Page} from 'components';
 import {RealmCreatePerson} from 'database';
 import React, {useState} from 'react';
 import {Text, TextInput, View} from 'react-native';
@@ -70,18 +70,27 @@ const AddPerson: React.FC<AddPersonProps> = ({navigation, route}) => {
     <Page>
       <styles.Container>
         <View>
-          <Text>Firstname</Text>
-          <TextInput
+          <Input
+            label="Firstname"
             onChangeText={text => setForm({...form, firstname: text})}
+            error={errors.firstname ? requiredError : undefined}
+            value={form.firstname}
           />
-          <Text>Surname</Text>
-          <TextInput
+
+          <Input
+            label="Surname"
             onChangeText={text => setForm({...form, lastname: text})}
+            error={errors.lastname ? requiredError : undefined}
+            value={form.lastname}
           />
-          <Text>Birthday</Text>
-          <TextInput
+
+          <Input
+            label="Birthday"
             onChangeText={text => setForm({...form, birthdate: new Date()})}
+            error={errors.birthdate ? requiredError : undefined}
+            value={form.birthdate}
           />
+
           <Text>Image</Text>
           <FontAwesome5Icon name="plus" />
         </View>

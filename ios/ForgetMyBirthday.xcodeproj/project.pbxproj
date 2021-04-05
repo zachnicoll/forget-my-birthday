@@ -28,6 +28,15 @@
 		1E076BAD3D934F7AA06A3E81 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 77FCE7465F514A9F99944C82 /* Octicons.ttf */; };
 		160414ACEAD842E493C8000F /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 706F74799B65455597F7520B /* SimpleLineIcons.ttf */; };
 		1D262C9DD5044173B89D8727 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1B64E0E2C8EA41FDA1206086 /* Zocial.ttf */; };
+		D3C56D2E34FB4AD39AAD610A /* Catamaran-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 344811EA94D8466C9435F924 /* Catamaran-Black.ttf */; };
+		6594408633D6454C897BF1EC /* Catamaran-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6126BC4F66C1440F9D91EFF6 /* Catamaran-Bold.ttf */; };
+		2832D0227D814A93BC4EBC75 /* Catamaran-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 09861576106E4E709064BB2E /* Catamaran-ExtraBold.ttf */; };
+		3437415F922E46329F585B77 /* Catamaran-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6205FD43850545B48587DE7C /* Catamaran-ExtraLight.ttf */; };
+		860F6AB9C169479E814B519D /* Catamaran-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A55A5DBC3F8E4C2BB77575DB /* Catamaran-Light.ttf */; };
+		A0378E6467354310878B9049 /* Catamaran-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4EABDC3005AA40D7A67B9A79 /* Catamaran-Medium.ttf */; };
+		DBF2197A4D7E4B46ADFBA4C7 /* Catamaran-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F7C23553CD1141A99D8AD1A6 /* Catamaran-Regular.ttf */; };
+		057539CD470142CE95F5B10D /* Catamaran-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FC72F2DB63B0460DB760B3A1 /* Catamaran-SemiBold.ttf */; };
+		E187AD3C9C3749E9A804F637 /* Catamaran-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6C282176739940FC8CF57D82 /* Catamaran-Thin.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +77,15 @@
 		77FCE7465F514A9F99944C82 /* Octicons.ttf */ = {isa = PBXFileReference; name = "Octicons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		706F74799B65455597F7520B /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; name = "SimpleLineIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		1B64E0E2C8EA41FDA1206086 /* Zocial.ttf */ = {isa = PBXFileReference; name = "Zocial.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		344811EA94D8466C9435F924 /* Catamaran-Black.ttf */ = {isa = PBXFileReference; name = "Catamaran-Black.ttf"; path = "../assets/fonts/Catamaran-Black.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		6126BC4F66C1440F9D91EFF6 /* Catamaran-Bold.ttf */ = {isa = PBXFileReference; name = "Catamaran-Bold.ttf"; path = "../assets/fonts/Catamaran-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		09861576106E4E709064BB2E /* Catamaran-ExtraBold.ttf */ = {isa = PBXFileReference; name = "Catamaran-ExtraBold.ttf"; path = "../assets/fonts/Catamaran-ExtraBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		6205FD43850545B48587DE7C /* Catamaran-ExtraLight.ttf */ = {isa = PBXFileReference; name = "Catamaran-ExtraLight.ttf"; path = "../assets/fonts/Catamaran-ExtraLight.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A55A5DBC3F8E4C2BB77575DB /* Catamaran-Light.ttf */ = {isa = PBXFileReference; name = "Catamaran-Light.ttf"; path = "../assets/fonts/Catamaran-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		4EABDC3005AA40D7A67B9A79 /* Catamaran-Medium.ttf */ = {isa = PBXFileReference; name = "Catamaran-Medium.ttf"; path = "../assets/fonts/Catamaran-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F7C23553CD1141A99D8AD1A6 /* Catamaran-Regular.ttf */ = {isa = PBXFileReference; name = "Catamaran-Regular.ttf"; path = "../assets/fonts/Catamaran-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		FC72F2DB63B0460DB760B3A1 /* Catamaran-SemiBold.ttf */ = {isa = PBXFileReference; name = "Catamaran-SemiBold.ttf"; path = "../assets/fonts/Catamaran-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		6C282176739940FC8CF57D82 /* Catamaran-Thin.ttf */ = {isa = PBXFileReference; name = "Catamaran-Thin.ttf"; path = "../assets/fonts/Catamaran-Thin.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +194,15 @@
 				77FCE7465F514A9F99944C82 /* Octicons.ttf */,
 				706F74799B65455597F7520B /* SimpleLineIcons.ttf */,
 				1B64E0E2C8EA41FDA1206086 /* Zocial.ttf */,
+				344811EA94D8466C9435F924 /* Catamaran-Black.ttf */,
+				6126BC4F66C1440F9D91EFF6 /* Catamaran-Bold.ttf */,
+				09861576106E4E709064BB2E /* Catamaran-ExtraBold.ttf */,
+				6205FD43850545B48587DE7C /* Catamaran-ExtraLight.ttf */,
+				A55A5DBC3F8E4C2BB77575DB /* Catamaran-Light.ttf */,
+				4EABDC3005AA40D7A67B9A79 /* Catamaran-Medium.ttf */,
+				F7C23553CD1141A99D8AD1A6 /* Catamaran-Regular.ttf */,
+				FC72F2DB63B0460DB760B3A1 /* Catamaran-SemiBold.ttf */,
+				6C282176739940FC8CF57D82 /* Catamaran-Thin.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -287,6 +314,15 @@
 				1E076BAD3D934F7AA06A3E81 /* Octicons.ttf in Resources */,
 				160414ACEAD842E493C8000F /* SimpleLineIcons.ttf in Resources */,
 				1D262C9DD5044173B89D8727 /* Zocial.ttf in Resources */,
+				D3C56D2E34FB4AD39AAD610A /* Catamaran-Black.ttf in Resources */,
+				6594408633D6454C897BF1EC /* Catamaran-Bold.ttf in Resources */,
+				2832D0227D814A93BC4EBC75 /* Catamaran-ExtraBold.ttf in Resources */,
+				3437415F922E46329F585B77 /* Catamaran-ExtraLight.ttf in Resources */,
+				860F6AB9C169479E814B519D /* Catamaran-Light.ttf in Resources */,
+				A0378E6467354310878B9049 /* Catamaran-Medium.ttf in Resources */,
+				DBF2197A4D7E4B46ADFBA4C7 /* Catamaran-Regular.ttf in Resources */,
+				057539CD470142CE95F5B10D /* Catamaran-SemiBold.ttf in Resources */,
+				E187AD3C9C3749E9A804F637 /* Catamaran-Thin.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

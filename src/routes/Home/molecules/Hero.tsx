@@ -14,11 +14,11 @@ export const Hero: React.FC<HeroProps> = ({person}) => {
   return (
     <styles.HeroContainter>
       <styles.HeroImage />
-      <Text>
+      <Text style={{fontFamily: 'Catamaran-Bold', fontSize: 24}}>
         {person.firstname}'s birthday is{' '}
         {isSameDay(person.birthdate, new Date())
           ? 'today'
-          : daysUntilBirthday(person)}
+          : `in ${daysUntilBirthday(person)} days!`}
         !
       </Text>
       <Line />
