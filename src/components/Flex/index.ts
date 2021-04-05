@@ -14,6 +14,10 @@ export const FlexColCenter = styled.View`
   justify-content: center;
 `;
 
+export const FlexColBetween = styled.View`
+  justify-content: space-between;
+`;
+
 export const TouchableFlexRow = styled.TouchableOpacity`
   flex-direction: row;
   align-items: center;

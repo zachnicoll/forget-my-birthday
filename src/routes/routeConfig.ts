@@ -48,11 +48,15 @@ export const RootStackScreens: StackScreen[] = [
   {
     name: 'ViewPeople',
     component: ViewPeople,
-    options: {},
+    options: {
+      headerTitle: 'Find Someone',
+    },
   },
   {
     name: 'Settings',
     component: Settings,
-    options: {},
+    options: {
+      headerTitle: 'Settings',
+    },
   },
 ];
