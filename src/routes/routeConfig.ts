@@ -26,7 +26,7 @@ export const RootStackScreens: StackScreen[] = [
     name: 'Home',
     component: Home,
     options: {
-      headerTitle: 'Forget My Birthday',
+      headerShown: false,
     },
   },
 ];
