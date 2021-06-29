@@ -1,11 +1,11 @@
 import {RouteProp} from '@react-navigation/native';
 import {StackNavigationProp} from '@react-navigation/stack';
 import React from 'react';
-import {RootStackParamList} from 'routes/routeConfig';
+import {RootTabParamList} from 'routes/routeConfig';
 
 interface ViewPeopleProps {
-  navigation: StackNavigationProp<RootStackParamList, 'ViewPeople'>;
-  route: RouteProp<RootStackParamList, 'ViewPeople'>;
+  navigation: StackNavigationProp<RootTabParamList, 'ViewPeople'>;
+  route: RouteProp<RootTabParamList, 'ViewPeople'>;
 }
 
 const ViewPeople: React.FC<ViewPeopleProps> = ({navigation}) => {

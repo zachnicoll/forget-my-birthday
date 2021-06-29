@@ -1,23 +1,26 @@
 import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
-import {createStackNavigator} from '@react-navigation/stack';
-import {RootStackParamList, RootStackScreens} from 'routes/routeConfig';
+import {RootTabParamList, RootStackScreens} from 'routes/routeConfig';
+import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+import CustomTabBar from 'components/CustomTabBar';
 
-const RootStack = createStackNavigator<RootStackParamList>();
+const RootTab = createBottomTabNavigator<RootTabParamList>();
 
 const App = () => {
   return (
     <NavigationContainer>
-      <RootStack.Navigator initialRouteName="Home">
+      <RootTab.Navigator
+        initialRouteName="Home"
+        tabBar={props => <CustomTabBar {...props} />}>
         {RootStackScreens.map(screen => (
-          <RootStack.Screen
+          <RootTab.Screen
             key={screen.name}
             name={screen.name}
             component={screen.component}
             options={screen.options}
           />
         ))}
-      </RootStack.Navigator>
+      </RootTab.Navigator>
     </NavigationContainer>
   );
 };

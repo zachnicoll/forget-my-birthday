@@ -1,11 +1,11 @@
 import {RouteProp} from '@react-navigation/native';
 import {StackNavigationProp} from '@react-navigation/stack';
 import React from 'react';
-import {RootStackParamList} from 'routes/routeConfig';
+import {RootTabParamList} from 'routes/routeConfig';
 
 interface SettingsProps {
-  navigation: StackNavigationProp<RootStackParamList, 'Settings'>;
-  route: RouteProp<RootStackParamList, 'Settings'>;
+  navigation: StackNavigationProp<RootTabParamList, 'Settings'>;
+  route: RouteProp<RootTabParamList, 'Settings'>;
 }
 
 const Settings: React.FC<SettingsProps> = ({navigation}) => {

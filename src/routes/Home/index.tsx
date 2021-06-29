@@ -4,13 +4,13 @@ import {Page, TouchableIcon, PersonRow, FlexColCenter} from 'components';
 import {usePeople} from 'hooks';
 import React from 'react';
 import {ScrollView, Text} from 'react-native';
-import {RootStackParamList} from 'routes/routeConfig';
+import {RootTabParamList} from 'routes/routeConfig';
 import {Hero} from './molecules/Hero';
 import * as styles from './styles';
 
 interface HomeProps {
-  navigation: StackNavigationProp<RootStackParamList, 'Home'>;
-  route: RouteProp<RootStackParamList, 'Home'>;
+  navigation: StackNavigationProp<RootTabParamList, 'Home'>;
+  route: RouteProp<RootTabParamList, 'Home'>;
 }
 
 const Home: React.FC<HomeProps> = ({navigation}) => {
@@ -18,14 +18,6 @@ const Home: React.FC<HomeProps> = ({navigation}) => {
 
   const handleAddPerson = (): void => {
     navigation.navigate('AddPerson', {});
-  };
-
-  const handleViewPeople = (): void => {
-    navigation.navigate('ViewPeople');
-  };
-
-  const handleViewSettings = (): void => {
-    navigation.navigate('Settings');
   };
 
   return (
@@ -38,12 +30,6 @@ const Home: React.FC<HomeProps> = ({navigation}) => {
               <PersonRow key={person.id} person={person} />
             ))}
           </ScrollView>
-
-          <styles.FooterContainer>
-            <TouchableIcon name="bars" onPress={handleViewPeople} />
-            <TouchableIcon name="plus" onPress={handleAddPerson} />
-            <TouchableIcon name="cog" onPress={handleViewSettings} />
-          </styles.FooterContainer>
         </>
       ) : (
         <FlexColCenter>

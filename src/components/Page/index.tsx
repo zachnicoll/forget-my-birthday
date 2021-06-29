@@ -5,5 +5,9 @@ import * as styles from './styles';
 interface PageProps extends ViewProps {}
 
 export const Page: React.FC<PageProps> = ({children, ...viewProps}) => {
-  return <styles.PageContainer {...viewProps}>{children}</styles.PageContainer>;
+  return (
+    <styles.PageContainer {...viewProps}>
+      <styles.InnerPage>{children}</styles.InnerPage>
+    </styles.PageContainer>
+  );
 };
