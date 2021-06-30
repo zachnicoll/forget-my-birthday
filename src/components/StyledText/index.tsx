@@ -13,12 +13,14 @@ type FontWeight =
   | 'Medium';
 
 interface StyledTextProps extends TextProps {
-  type: FontWeight | 'Title';
+  type?: FontWeight | 'Title';
+  fontSize?: number;
 }
 
 export const StyledText: React.FC<StyledTextProps> = ({
-  type,
+  type = 'Regular',
   children,
+  fontSize,
   style,
   ...textProps
 }) => {
@@ -28,6 +30,7 @@ export const StyledText: React.FC<StyledTextProps> = ({
         {
           fontFamily:
             type === 'Title' ? 'FredokaOne-Regular' : `Catamaran-${type}`,
+          fontSize: fontSize,
         },
         style,
       ]}

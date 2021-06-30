@@ -74,7 +74,7 @@ const AddPerson: React.FC<AddPersonProps> = ({navigation, route}) => {
         <StyledText
           type="Title"
           style={css`
-            font-size: 32px;
+            font-size: 24px;
             text-align: center;
           `}>
           Remember a Birthday

@@ -1,12 +1,13 @@
 import {RouteProp} from '@react-navigation/native';
 import {StackNavigationProp} from '@react-navigation/stack';
-import {Page, TouchableIcon, PersonRow, FlexColCenter} from 'components';
+import {Page, TouchableIcon, FlexColCenter} from 'components';
+import {isAfter, startOfDay} from 'date-fns';
 import {usePeople} from 'hooks';
 import React from 'react';
-import {ScrollView, Text} from 'react-native';
+import {Text} from 'react-native';
 import {RootTabParamList} from 'routes/routeConfig';
 import {Hero} from './molecules/Hero';
-import * as styles from './styles';
+import UpcomingBirthdays from './molecules/UpcomingBirthdays';
 
 interface HomeProps {
   navigation: StackNavigationProp<RootTabParamList, 'Home'>;
@@ -24,12 +25,14 @@ const Home: React.FC<HomeProps> = ({navigation}) => {
     <Page>
       {people.length > 0 ? (
         <>
-          <Hero person={people[0]} />
-          <ScrollView>
-            {people.map(person => (
-              <PersonRow key={person.id} person={person} />
-            ))}
-          </ScrollView>
+          <Hero
+            person={
+              people.filter(p =>
+                isAfter(p.birthdate, startOfDay(new Date())),
+              )[0]
+            }
+          />
+          <UpcomingBirthdays people={people} />
         </>
       ) : (
         <FlexColCenter>

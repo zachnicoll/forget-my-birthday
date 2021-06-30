@@ -10,3 +10,7 @@ export const HeroImage = styled.View`
   justify-content: center;
   align-items: center;
 `;
+
+export const UpcomingBirthdaysContainer = styled.View`
+  margin-top: 20px;
+`;

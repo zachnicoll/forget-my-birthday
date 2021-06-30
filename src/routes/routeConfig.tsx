@@ -37,18 +37,18 @@ export const RootStackScreens: TabScreen[] = [
     },
   },
   {
-    name: 'AddPerson',
-    component: AddPerson,
-    options: {
-      tabBarIcon: props => <Icon name="add" {...props} />,
-      color: Colors.orangeYellowCrayola,
-    },
-  },
-  {
     name: 'ViewPeople',
     component: ViewPeople,
     options: {
       tabBarIcon: props => <Icon name="search" {...props} />,
+      color: Colors.orangeYellowCrayola,
+    },
+  },
+  {
+    name: 'AddPerson',
+    component: AddPerson,
+    options: {
+      tabBarIcon: props => <Icon name="add" {...props} />,
       color: Colors.caribbeanGreen,
     },
   },
