@@ -19,6 +19,7 @@
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		860F6AB9C169479E814B519D /* Catamaran-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A55A5DBC3F8E4C2BB77575DB /* Catamaran-Light.ttf */; };
 		899AFB5BB7E231617CD9EDE7 /* libPods-ForgetMyBirthday.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C56D24C7D0AA350711646252 /* libPods-ForgetMyBirthday.a */; };
+		9B8EFE66268BEC75008E6332 /* FredokaOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9B8EFE65268BEC75008E6332 /* FredokaOne-Regular.ttf */; };
 		9BF0489E268B2298008EFAE1 /* Fonts in Resources */ = {isa = PBXBuildFile; fileRef = 9BF0489D268B2298008EFAE1 /* Fonts */; };
 		A0378E6467354310878B9049 /* Catamaran-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4EABDC3005AA40D7A67B9A79 /* Catamaran-Medium.ttf */; };
 		D3C56D2E34FB4AD39AAD610A /* Catamaran-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 344811EA94D8466C9435F924 /* Catamaran-Black.ttf */; };
@@ -56,6 +57,7 @@
 		6C282176739940FC8CF57D82 /* Catamaran-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Catamaran-Thin.ttf"; path = "../assets/fonts/Catamaran-Thin.ttf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ForgetMyBirthday/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		93E3AE8CCAC56319D37D3C79 /* Pods-ForgetMyBirthday-ForgetMyBirthdayTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForgetMyBirthday-ForgetMyBirthdayTests.release.xcconfig"; path = "Target Support Files/Pods-ForgetMyBirthday-ForgetMyBirthdayTests/Pods-ForgetMyBirthday-ForgetMyBirthdayTests.release.xcconfig"; sourceTree = "<group>"; };
+		9B8EFE65268BEC75008E6332 /* FredokaOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FredokaOne-Regular.ttf"; sourceTree = "<group>"; };
 		9BF0489D268B2298008EFAE1 /* Fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Fonts; path = "../node_modules/react-native-vector-icons/Fonts"; sourceTree = "<group>"; };
 		9E007ECC3E77F984F774C7CA /* libPods-ForgetMyBirthday-ForgetMyBirthdayTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ForgetMyBirthday-ForgetMyBirthdayTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A55A5DBC3F8E4C2BB77575DB /* Catamaran-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Catamaran-Light.ttf"; path = "../assets/fonts/Catamaran-Light.ttf"; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 		7D9B4E6F2A5549E7A733C645 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				9B8EFE65268BEC75008E6332 /* FredokaOne-Regular.ttf */,
 				9BF0489D268B2298008EFAE1 /* Fonts */,
 				344811EA94D8466C9435F924 /* Catamaran-Black.ttf */,
 				6126BC4F66C1440F9D91EFF6 /* Catamaran-Bold.ttf */,
@@ -287,6 +290,7 @@
 				6594408633D6454C897BF1EC /* Catamaran-Bold.ttf in Resources */,
 				2832D0227D814A93BC4EBC75 /* Catamaran-ExtraBold.ttf in Resources */,
 				3437415F922E46329F585B77 /* Catamaran-ExtraLight.ttf in Resources */,
+				9B8EFE66268BEC75008E6332 /* FredokaOne-Regular.ttf in Resources */,
 				860F6AB9C169479E814B519D /* Catamaran-Light.ttf in Resources */,
 				A0378E6467354310878B9049 /* Catamaran-Medium.ttf in Resources */,
 				DBF2197A4D7E4B46ADFBA4C7 /* Catamaran-Regular.ttf in Resources */,

@@ -1,5 +1,6 @@
 import {RouteProp} from '@react-navigation/native';
 import {StackNavigationProp} from '@react-navigation/stack';
+import {Page} from 'components';
 import React from 'react';
 import {RootTabParamList} from 'routes/routeConfig';
 
@@ -9,7 +10,7 @@ interface ViewPeopleProps {
 }
 
 const ViewPeople: React.FC<ViewPeopleProps> = ({navigation}) => {
-  return <></>;
+  return <Page />;
 };
 
 export default ViewPeople;

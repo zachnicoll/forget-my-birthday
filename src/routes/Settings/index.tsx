@@ -1,5 +1,6 @@
 import {RouteProp} from '@react-navigation/native';
 import {StackNavigationProp} from '@react-navigation/stack';
+import {Page} from 'components';
 import React from 'react';
 import {RootTabParamList} from 'routes/routeConfig';
 
@@ -9,7 +10,7 @@ interface SettingsProps {
 }
 
 const Settings: React.FC<SettingsProps> = ({navigation}) => {
-  return <></>;
+  return <Page />;
 };
 
 export default Settings;

@@ -6,6 +6,7 @@ import ViewPeople from './ViewPeople';
 import Settings from './Settings';
 import {BottomTabNavigationOptions} from '@react-navigation/bottom-tabs';
 import Icon from 'react-native-vector-icons/MaterialIcons';
+import Colors from 'helpers/colourPalette';
 
 export type RootTabParamList = {
   Home: undefined;
@@ -32,7 +33,7 @@ export const RootStackScreens: TabScreen[] = [
     component: Home,
     options: {
       tabBarIcon: props => <Icon name="home" {...props} />,
-      color: '#EF476F',
+      color: Colors.paradisePink,
     },
   },
   {
@@ -40,7 +41,7 @@ export const RootStackScreens: TabScreen[] = [
     component: AddPerson,
     options: {
       tabBarIcon: props => <Icon name="add" {...props} />,
-      color: '#FFD166',
+      color: Colors.orangeYellowCrayola,
     },
   },
   {
@@ -48,7 +49,7 @@ export const RootStackScreens: TabScreen[] = [
     component: ViewPeople,
     options: {
       tabBarIcon: props => <Icon name="search" {...props} />,
-      color: '#06D6A0',
+      color: Colors.caribbeanGreen,
     },
   },
   {
@@ -56,7 +57,7 @@ export const RootStackScreens: TabScreen[] = [
     component: Settings,
     options: {
       tabBarIcon: props => <Icon name="settings" {...props} />,
-      color: '#118AB2',
+      color: Colors.blueNCS,
     },
   },
 ];

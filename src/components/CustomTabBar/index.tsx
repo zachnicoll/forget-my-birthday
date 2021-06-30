@@ -1,6 +1,7 @@
 import {BottomTabBarProps} from '@react-navigation/bottom-tabs';
 import React from 'react';
-import {View, TouchableOpacity, Text, SafeAreaView} from 'react-native';
+import {CustomTabNavOptions} from 'routes/routeConfig';
+import * as styles from './styles';
 
 interface CustomTabBarProps extends BottomTabBarProps {}
 
@@ -9,23 +10,17 @@ const CustomTabBar: React.FC<CustomTabBarProps> = ({
   descriptors,
   navigation,
 }) => {
-  const focusedOptions = descriptors[state.routes[state.index].key].options;
+  const focusedOptions = descriptors[state.routes[state.index].key]
+    .options as CustomTabNavOptions;
 
   if (focusedOptions.tabBarVisible === false) {
     return null;
   }
 
   return (
-    <SafeAreaView style={{flexDirection: 'row'}}>
+    <styles.TabBarContainer primaryColor={focusedOptions.color}>
       {state.routes.map((route, index) => {
-        const {options} = descriptors[route.key];
-        const label =
-          options.tabBarLabel !== undefined
-            ? options.tabBarLabel
-            : options.title !== undefined
-            ? options.title
-            : route.name;
-
+        const options = descriptors[route.key].options as CustomTabNavOptions;
         const isFocused = state.index === index;
 
         const onPress = () => {
@@ -48,24 +43,25 @@ const CustomTabBar: React.FC<CustomTabBarProps> = ({
         };
 
         return (
-          <TouchableOpacity
+          <styles.TabContainer
             accessibilityRole="button"
             accessibilityState={isFocused ? {selected: true} : {}}
             accessibilityLabel={options.tabBarAccessibilityLabel}
             testID={options.tabBarTestID}
             onPress={onPress}
             onLongPress={onLongPress}
-            style={{flex: 1}}>
+            key={index}
+            primaryColor={isFocused ? options.color : 'white'}>
             {options?.tabBarIcon &&
               options?.tabBarIcon({
                 focused: isFocused,
-                color: options.color,
+                color: isFocused ? 'white' : options.color,
                 size: 32,
               })}
-          </TouchableOpacity>
+          </styles.TabContainer>
         );
       })}
-    </SafeAreaView>
+    </styles.TabBarContainer>
   );
 };
 

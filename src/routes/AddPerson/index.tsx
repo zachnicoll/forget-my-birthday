@@ -1,7 +1,7 @@
 import {css} from '@emotion/native';
 import {RouteProp} from '@react-navigation/native';
 import {StackNavigationProp} from '@react-navigation/stack';
-import {Input, Page} from 'components';
+import {Input, Page, StyledText} from 'components';
 import {RealmCreatePerson} from 'database';
 import React, {useState} from 'react';
 import {Text, View} from 'react-native';
@@ -71,6 +71,14 @@ const AddPerson: React.FC<AddPersonProps> = ({navigation, route}) => {
   return (
     <Page>
       <styles.Container>
+        <StyledText
+          type="Title"
+          style={css`
+            font-size: 32px;
+            text-align: center;
+          `}>
+          Remember a Birthday
+        </StyledText>
         <View>
           <Input
             label="Firstname"
