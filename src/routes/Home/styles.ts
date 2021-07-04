@@ -13,4 +13,5 @@ export const HeroImage = styled.View`
 
 export const UpcomingBirthdaysContainer = styled.View`
   margin-top: 20px;
+  flex-grow: 1;
 `;
