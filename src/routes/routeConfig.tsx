@@ -2,7 +2,7 @@ import React from 'react';
 import Home from 'routes/Home';
 import {Person} from 'types';
 import AddPerson from './AddPerson';
-import ViewPeople from './ViewPeople';
+import FindSomeone from './FindSomeone';
 import Settings from './Settings';
 import {BottomTabNavigationOptions} from '@react-navigation/bottom-tabs';
 import Icon from 'react-native-vector-icons/MaterialIcons';
@@ -10,7 +10,7 @@ import Colors from 'helpers/colourPalette';
 
 export type RootTabParamList = {
   Home: undefined;
-  ViewPeople: undefined;
+  FindSomeone: undefined;
   AddPerson: {
     person?: Person;
   };
@@ -37,8 +37,8 @@ export const RootStackScreens: TabScreen[] = [
     },
   },
   {
-    name: 'ViewPeople',
-    component: ViewPeople,
+    name: 'FindSomeone',
+    component: FindSomeone,
     options: {
       tabBarIcon: props => <Icon name="search" {...props} />,
       color: Colors.orangeYellowCrayola,

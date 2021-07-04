@@ -1,7 +1,14 @@
 import {css} from '@emotion/native';
 import {RouteProp} from '@react-navigation/native';
 import {StackNavigationProp} from '@react-navigation/stack';
-import {Input, Page, StyledText} from 'components';
+import {
+  FlexRow,
+  FlexRowBetween,
+  Input,
+  Page,
+  StyledText,
+  TouchableIcon,
+} from 'components';
 import {RealmCreatePerson} from 'database';
 import React, {useState} from 'react';
 import {Text, View} from 'react-native';
@@ -11,6 +18,9 @@ import {RootTabParamList} from 'routes/routeConfig';
 import {Person} from 'types';
 import uuid from 'react-native-uuid';
 import * as styles from './styles';
+import {Alert} from 'react-native';
+import TitleText from 'components/TitleText';
+import Colors from 'helpers/colourPalette';
 
 interface AddPersonProps {
   navigation: StackNavigationProp<RootTabParamList, 'AddPerson'>;
@@ -64,59 +74,73 @@ const AddPerson: React.FC<AddPersonProps> = ({navigation, route}) => {
       navigation.goBack();
     } catch (e) {
       console.error(e);
-      // TODO: display failure message
+      Alert.alert(
+        'Could not add birthday',
+        'Something went wrong, please try again.',
+      );
     }
   };
 
   return (
     <Page>
       <styles.Container>
-        <StyledText
-          type="Title"
-          style={css`
-            font-size: 24px;
-            text-align: center;
-          `}>
-          Remember a Birthday
+        <TitleText>Remember a Birthday</TitleText>
+
+        <Input
+          label="Firstname"
+          onChangeText={text => setForm({...form, firstname: text})}
+          error={errors.firstname ? requiredError : undefined}
+          value={form.firstname}
+        />
+
+        <Input
+          label="Surname"
+          onChangeText={text => setForm({...form, lastname: text})}
+          error={errors.lastname ? requiredError : undefined}
+          value={form.lastname}
+        />
+
+        {/* Birthday Date Selection */}
+        <StyledText fontSize={18} type="Title">
+          Birthday
         </StyledText>
+
+        {/* TODO: Add date picker here */}
+
+        {/* <Input
+          label="Birthday"
+          onChangeText={_ => setForm({...form, birthdate: new Date()})}
+          error={errors.birthdate ? requiredError : undefined}
+          value={form.birthdate?.toDateString()}
+        /> */}
+
+        {/* Image selection for Person */}
         <View>
-          <Input
-            label="Firstname"
-            onChangeText={text => setForm({...form, firstname: text})}
-            error={errors.firstname ? requiredError : undefined}
-            value={form.firstname}
-          />
-
-          <Input
-            label="Surname"
-            onChangeText={text => setForm({...form, lastname: text})}
-            error={errors.lastname ? requiredError : undefined}
-            value={form.lastname}
-          />
-
-          <Input
-            label="Birthday"
-            onChangeText={_ => setForm({...form, birthdate: new Date()})}
-            error={errors.birthdate ? requiredError : undefined}
-            value={form.birthdate?.toDateString()}
-          />
-
-          <Text>Image</Text>
-          <FontAwesome5Icon name="plus" />
+          <StyledText fontSize={18} type="Title">
+            Image
+          </StyledText>
+          <FlexRowBetween
+            style={css`
+              margin-top: 12px;
+            `}>
+            <styles.ImageSelectButton
+              name="camera"
+              size={24}
+              onPress={() => {
+                /* Open the camera to take a picture */
+              }}
+            />
+            <styles.ImageSelectButton
+              name="images"
+              size={24}
+              onPress={() => {
+                /* Open the device's album to select a photo */
+              }}
+            />
+          </FlexRowBetween>
         </View>
 
-        <TouchableOpacity
-          onPress={handleSubmit}
-          style={css`
-            width: 100%;
-            background-color: lightgreen;
-            height: 64px;
-            border-radius: 50px;
-            justify-content: center;
-            align-items: center;
-          `}>
-          <FontAwesome5Icon name="check" />
-        </TouchableOpacity>
+        <styles.DoneButton name="check" onPress={handleSubmit} />
       </styles.Container>
     </Page>
   );
